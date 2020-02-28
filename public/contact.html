@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>node-project</title>
+  </head>
+  <body class="container">
+  <h1 class="jumbotron text-center bg-dark text-light">Contact Page Node-Project</h1>
+
+  <!-- Menu Bar -->
+  <ul class="nav justify-content-center bg-dark text-light my-3">
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+  </li>
+</ul>
+
+  <br>
+
+  <form class="text-white bg-dark border jumbotron" action="sendForm" method="POST">
+    <label for="Username">Username</label>
+    <!-- Name attribute is required to send it to server and name should be same as ID -->
+    <input type="text" class="form-control" id="username" name="username" value="username">
+
+    <br>
+
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" name="email" value="email">
+
+    <br>
+
+    <input type="submit" id="submit" value="Submit">
+
+  </form>
+
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
